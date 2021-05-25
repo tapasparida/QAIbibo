@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Practice Suite]">
+  <listeners>
+    <listener class-name="TestUtils.SuiteListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test Frameworks(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="testSuites.SampleTest">
+        <methods>
+          <include name="beforeMethodMethod"/>
+          <include name="hotelLocTest"/>
+          <include name="beforeTestMethod"/>
+          <include name="afterTestMethod"/>
+          <include name="afterMethodMethod"/>
+        </methods>
+      </class> <!-- testSuites.SampleTest -->
+    </classes>
+  </test> <!-- Test Frameworks(failed) -->
+</suite> <!-- Failed suite [Practice Suite] -->
